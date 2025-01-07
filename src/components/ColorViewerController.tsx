@@ -24,13 +24,13 @@ export default function ColorViewerController() {
     }
   };
   return (
-    <styled.section>
+    <styled.div>
       <ColorsInput setColors={setColors} />
       {!!colors?.length && (
         <styled.div py="10" w="full">
           <DraggableList listItems={colors} handleDragEnd={handleDragEnd} />
         </styled.div>
       )}
-    </styled.section>
+    </styled.div>
   );
 }
