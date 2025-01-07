@@ -1,7 +1,12 @@
 import { Container, styled } from "styled-system/jsx";
 
-import ColorsInput from "@/components/ColorsInput";
 import ColorViewerController from "@/components/ColorViewerController";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Color Viewer",
+  description: "Color Viewer by Liz H.",
+};
 
 export default function Home() {
   return (
