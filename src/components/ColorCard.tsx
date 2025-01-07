@@ -16,6 +16,7 @@ export default function ColorCard({ color }) {
       style={{
         transform: CSS.Transform.toString(transform),
         transition,
+        touchAction: "none", // Prevent default touch gestures
       }}
       m="4"
       w="fit-content"
